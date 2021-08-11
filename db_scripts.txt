@@ -1,0 +1,11 @@
+use mysql;
+drop table adl_alert_tbl;
+create table ADL_Alert_tbl ( 
+   task_id INT NOT NULL PRIMARY KEY, 
+   task_date DATE NOT NULL, 
+   task_time TIME NOT NULL, 
+   Description VARCHAR(80), 
+   task_repeat BOOLEAN, 
+   task_priority INT);
+
+
