@@ -25,6 +25,7 @@ class ProcessTask extends TimerTask
 {
 
     private final int mTaskId;
+    // Twilio ACCOUNT_SID AND AUTH_TOKEN are acquired from Twilio SMS gateway service subscription. 
     public static final String ACCOUNT_SID = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"; //ACCOUNT_SID is confidential and cannot be shared
     public static final String AUTH_TOKEN = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"; // AUTH_TOKEN is confidential and cannot be shared
 
@@ -44,8 +45,9 @@ class ProcessTask extends TimerTask
         Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
 
         // Using Twilio Message Class, sends SMS message to phone number
-        Message message = Message.creator(new PhoneNumber("+###########"), //Phone number is confidential and cannot be shared
-                new PhoneNumber("+###########"), MySQLDBHandler.getMessage(mTaskId))
+        // Following phone numbers could not be publicly shared. 
+        Message message = Message.creator(new PhoneNumber("Put here SMS receiver phone number"), 
+                new PhoneNumber("Put here your Twilio phone number"), MySQLDBHandler.getMessage(mTaskId))
                 .create();
 
         int rowIndex = 0;
