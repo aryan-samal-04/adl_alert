@@ -27,7 +27,7 @@ class ProcessTask extends TimerTask
 
     private final int mTaskId;
     // Twilio Account_SID and AUTH_TOKEN are confidential and unique to the user, 
-    // and may only be acquired through creating a a Twilio account
+    // and may only be acquired through creating a Twilio account
     public static final String ACCOUNT_SID = "";
     public static final String AUTH_TOKEN = "";
 
