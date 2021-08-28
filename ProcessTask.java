@@ -48,7 +48,7 @@ class ProcessTask extends TimerTask
 
         // Using Twilio Message Class, sends SMS message to phone number
         Message message = Message.creator(new PhoneNumber("Receiving phone number"),
-                new PhoneNumber("Twilio-given phone number used to send"), MySQLDBHandler.getMessage(mTaskId))
+                new PhoneNumber("Twilio-given phone number used to send messages"), MySQLDBHandler.getMessage(mTaskId))
                 .create();
 
         int rowIndex = 0;
