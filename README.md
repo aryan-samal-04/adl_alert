@@ -23,5 +23,5 @@ REST API for delivering messages to handheld.
 
 Third-Party dependencies:
 1. Twilio REST API Classes
-2. Twilio Gateway Service
+2. Twilio Gateway Service - Subscribe SMS service.
 3. MySQL DBMS
