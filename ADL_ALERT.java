@@ -9,12 +9,10 @@
 // and reproduction of the software in any form is prohibited unless for academic purposes.
 //
 
-import javax.swing.*;
 import javax.swing.event.CellEditorListener;
 import javax.swing.event.ChangeEvent;
 import javax.swing.table.*;
 import javax.swing.text.MaskFormatter;
-import java.awt.*;
 import java.awt.event.*;
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -24,8 +22,10 @@ import java.time.format.DateTimeParseException;
 import java.util.Date;
 import javax.swing.table.TableColumn;
 import java.lang.Object;
-import java.time.*;
 import java.util.Timer;
+import javax.swing.*;
+import java.time.*;
+import java.awt.*;
 
 //
 // ADL_ALERT Class:
