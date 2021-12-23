@@ -140,6 +140,8 @@ public class ADL_ALERT extends JFrame implements ActionListener
             }
 
             System.out.println("Add row index: " + row);
+            // Default record as place holder, which needs to be modified to desired schedule 
+            // date, time, and other parameters from GUI.
             calendarRows[rowCalendarData] = new CalendarData("2021-01-01",
                     "12 00 AM",
                     "--", true, 1,newTaskId);
@@ -557,7 +559,7 @@ public class ADL_ALERT extends JFrame implements ActionListener
             return false;
         }
 
-        if ((pDate.getYear() + 1900) != 2021)
+        if ((pDate.getYear() + 1900) >= 2021)
         {
             System.out.println("Year " + pDate.getYear());
             return false;
